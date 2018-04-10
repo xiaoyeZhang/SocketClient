@@ -37,7 +37,7 @@
     [super viewDidLoad];
 
     self.ClientSocket = [[GCDAsyncSocket alloc]initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
-    self.portF.text = @"8080";
+    self.portF.text = @"12345";
     NSString *StringIP = [NSString deviceIPAdress]; //调用方法 获取ip地址 赋值给字符串 stringIP
     NSLog(@"ip地址：%@",StringIP);  //把ip 地址对应后台提供的参数 传给后台
     self.addressIPTF.text = StringIP;
